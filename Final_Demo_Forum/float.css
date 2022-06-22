@@ -1,0 +1,71 @@
+body {
+  align-items: center;
+  background: rgb(255,241,235);
+  background: radial-gradient(circle, rgba(255,241,235,1) 0%, rgba(231,247,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+a:link, a:visited {
+  color: rgb(237, 237, 244);
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(106, 157, 234);
+}
+
+a:active{
+  color: rgb(255, 255, 255);
+}
+
+.wrap {
+  background: rgb(255,241,235);
+  background: radial-gradient(circle, rgba(255,241,235,1) 0%, rgba(231,247,255,1) 100%);
+  padding: 20%;
+  text-align: center;
+  width: 80%;
+}
+
+.block_left {
+  background: rgb(250,208,196);
+  background: radial-gradient(circle, rgba(250,208,196,1) 0%, rgba(255,209,255,0.6) 100%);
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  height: 330px;
+  padding: 20px;
+  width: 330px;
+}
+
+.block_right {
+  background: rgb(250,208,196);
+  background: radial-gradient(circle, rgba(250,208,196,1) 0%, rgba(255,209,255,0.6) 100%);
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  height: 330px;
+  padding: 20px;
+  width: 330px;
+}
+
+.blockText {
+  color: rgb(95, 100, 106);
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.title {
+  color: rgb(95, 100, 106);
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+} 

@@ -1,0 +1,225 @@
+body {
+  align-items: center;
+  background: rgb(255,241,235);
+  background: radial-gradient(circle, rgba(255,241,235,1) 0%, rgba(231,247,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  height: 120vh;
+}
+
+a:link, a:visited {
+  color: rgb(105, 105, 124);
+  padding: 4px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: rgb(106, 157, 234);
+}
+
+a:active{
+  color: rgb(255, 255, 255);
+}
+
+.form {
+  background: rgb(250,208,196);
+  background: radial-gradient(circle, rgba(250,208,196,1) 0%, rgba(255,209,255,0.6) 100%);
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 320px;
+}
+
+.form_long {
+  background: rgb(250,208,196);
+  background: radial-gradient(circle, rgba(250,208,196,1) 0%, rgba(255,209,255,0.6) 100%);
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 770px;
+  padding: 50px;
+  width: 500px;
+}
+
+.title {
+  color: rgb(105, 105, 124);
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.subtitle {
+  color: rgb(105, 105, 124);
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: rgb(58, 57, 67);
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background: rgb(251,215,223);
+  background: radial-gradient(circle, rgba(251,215,223,1) 0%, rgba(251,213,215,1) 100%);
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: rgb(60, 60, 66);
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: rgb(60, 60, 66);
+}
+
+.input:focus ~ .placeholder {
+  color: rgb(60, 60, 66);
+}
+
+.submit {
+  background-color: #aad9d9;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: rgb(60, 60, 66);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 520;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+.links {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+label {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+  /* Accessible outline */
+  /* Remove comment to use */
+  /*
+    &:focus-within {
+        outline: .125em solid $primary-color;
+    }
+  */
+}
+label input {
+  position: absolute;
+  left: -9999px;
+}
+label input:checked + span {
+  background-color: #d6d6e5;
+}
+label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em #00005c;
+}
+label span {
+  display: flex;
+  align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  transition: 0.25s ease;
+}
+label span:hover {
+  background-color: #d6d6e5;
+}
+label span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em #00005c;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
